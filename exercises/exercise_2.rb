@@ -5,3 +5,13 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
+class Store < ActiveRecord::Base
+end
+
+store1 = Store.first
+store2 = Store.second
+
+store1.name = 'Update name store1'
+store1.save
+
+#puts(store1)
